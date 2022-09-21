@@ -1,1 +1,2 @@
-print("Pidor");
+hello = "Hello" + ' ' + 'Pidor'
+print(hello)
