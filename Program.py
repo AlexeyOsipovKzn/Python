@@ -1,2 +1,1 @@
-hello = "Hello" + ' ' + 'Pidor'
-print(hello)
+print('Hello world')
