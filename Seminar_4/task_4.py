@@ -23,16 +23,13 @@ def get_polynomial(k, ratios):
 num = input('Введите степень К:  ')
 if num.isdigit() == True:
     print(get_polynomial(int(num), get_ratios(int(num))))
+
+    first = get_polynomial(int(num), get_ratios(int(num)))
+    with open('first.txt', 'w') as data:
+        data.write(first)
+
+    second = get_polynomial(int(num), get_ratios(int(num)))
+    with open('second.txt', 'w') as data:
+        data.write(second)
 else:
     print('Это не число')
-
-
-k = randint(1, 10)
-first = get_polynomial(k, get_ratios(k))
-with open(str('first.txt'), 'w') as data:
-    data.write(first)
-
-
-second = get_polynomial(k, get_ratios(k))
-with open(str('second.txt'), 'w') as data:
-    data.write(second)
