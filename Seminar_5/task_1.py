@@ -1,6 +1,3 @@
-from unittest import result
-
-
 def del_words(name):
     words = name.split()
     result = []
